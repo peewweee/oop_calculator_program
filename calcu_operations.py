@@ -3,7 +3,11 @@
 
 # Pseudocode (operations class)
 # create class operations
+class Operations:
+    def CalcOperation(self, first_number, second_number, input_operation):
     # if addition
+        if input_operation == "Addition":
+            return first_number + second_number
     # if subtraction
     # if multi
     # if divi
