@@ -14,8 +14,8 @@ class Calculator:
         # Ask user to choose and input math operation
         input_operation = input("Choose one math operation (Addition, Subtraction, Multiplication, Division): ")
         # Ask user to input two numbers
-        first_number = 2
-        second_number = 4
+        first_number = float(input("Enter your first number: "))
+        second_number = float(input("Enter your second number: "))
         # perform calculation using operations
         result_number = self.operations.CalcOperation(first_number, second_number, input_operation)
         # display result
