@@ -1,6 +1,9 @@
 # Creating a calculator program using OOP concepts
 # Phoebe Rhone L. Gangoso | BSCPE 1-4
 
+import calcu_ui
+calcu_ui.Header()
+
 # Pseudocode (main program)
 # import operations file
 import calcu_operations
@@ -16,15 +19,15 @@ class Calculator:
     def calculation(self):
         try:
             # Ask user to choose and input math operation
-            input_operation = input("Choose one math operation (Addition, Subtraction, Multiplication, Division): ")
+            input_operation = input("\033[0;36m Choose one math operation (Addition, Subtraction, Multiplication, Division): ")
             # Ask user to input two numbers
-            first_number = float(input("Enter your first number: "))
-            second_number = float(input("Enter your second number: "))
+            first_number = float(input("\033[0;35m Enter your first number: "))
+            second_number = float(input(" Enter your second number: "))
             # perform calculation using operations
             result_number = self.operations.CalcOperation(first_number, second_number, input_operation)
 
             if input_operation not in ['Addition', 'Subtraction', 'Multiplication', 'Division']:
-                raise ValueError("Invalid math operation")
+                raise ValueError("\033[0;31m Invalid math operation")
 
             # display result
             print("Answer:", result_number)
@@ -39,10 +42,10 @@ class Calculator:
 
         # catch exceptions
         except ValueError as e:
-            print(f"Error: {e}. Please try again.")
+            print(f"\033[0;31m Error:{e}. Please try again.")
             Calculator.calculation(self)
         except ZeroDivisionError:
-            print("Error: Cannot divide by zero. Please try again.")
+            print("\033[0;31m Error: Cannot divide by zero. Please try again.")
             Calculator.calculation(self)
 
 # call calculation method
