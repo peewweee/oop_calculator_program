@@ -12,4 +12,8 @@ class Operations:
         if input_operation == "Subtraction":
             return first_number - second_number
     # if multi
+        if input_operation == "Multiplication":
+            return first_number * second_number
     # if divi
+        if input_operation == "Division":
+            return first_number / second_number
