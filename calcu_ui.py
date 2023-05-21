@@ -11,4 +11,14 @@ def Header():
     print(title_line)
     print("")
 # Loading animation
+def Loading():
+    import time
+    for i in range(3):
+        print("\033[0;34m Calculating ", end="\N{slightly smiling face}")
+        for j in range(4):
+            print(".", end="")
+            time.sleep(0.25)
+        print("\r", end="")
+    print("\033[0;32m DONE!\N{grinning face}")
+    print("")
 # Thank you prompt

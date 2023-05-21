@@ -30,10 +30,10 @@ class Calculator:
                 raise ValueError("\033[0;31m Invalid math operation")
 
             # display result
-            print("Answer:", result_number)
+            print(" \N{tulip}\033[0;33m Answer:", result_number)
 
             # ask user if they want to try again or not
-            retry_input = input("Do you want to try again? (Yes/No): ")
+            retry_input = input("\033[0;35m Do you want to try again? (Yes/No): ")
             # if yes repeat
             if retry_input == "Yes":
                 Calculator.calculation(self)
