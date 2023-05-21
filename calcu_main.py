@@ -4,11 +4,14 @@
 # Pseudocode (main program)
 # import operations file
 import calcu_operations
+
 # create class calculator
 class Calculator:
+
     # method for instance of operation class
     def __init__(self):
         self.operations = calcu_operations.Operations()
+
     # method for inputting values and calculation
     def calculation(self):
         try:
@@ -36,9 +39,11 @@ class Calculator:
 
         # catch exceptions
         except ValueError as e:
-            print(f"Error: {e}")
+            print(f"Error: {e}. Please try again.")
+            Calculator.calculation(self)
         except ZeroDivisionError:
-            print("Error: Cannot divide by zero.")
+            print("Error: Cannot divide by zero. Please try again.")
+            Calculator.calculation(self)
 
 # call calculation method
 calculator = Calculator()
