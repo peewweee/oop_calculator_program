@@ -19,8 +19,8 @@ class Calculator:
     def calculation(self):
         try:
             # Ask user to choose and input math operation
-            print("")
-            input_operation = input("\033[0;36m Choose one math operation (Addition, Subtraction, Multiplication, Division): ")
+            print("\033[0;36m")
+            input_operation = input(" Choose one math operation (Addition, Subtraction, Multiplication, Division): ")
             # Ask user to input two numbers
             first_number = float(input("\033[0;35m Enter your first number: "))
             second_number = float(input(" Enter your second number: "))

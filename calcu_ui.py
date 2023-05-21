@@ -9,6 +9,9 @@ def Header():
     title_text = " Welcome to Phoebe's Calculator! "
     title_line = title_text.center(150, "*")
     print(title_line)
+    print("\033[0;32;40m ")
+    calcu_banner = (pyfiglet.figlet_format("SIMPLE CALCULATOR", font="standard", width=150, justify="center"))
+    print(calcu_banner)
 
 # Loading animation
 def Loading():
@@ -26,4 +29,4 @@ def Loading():
 # Thank you prompt
 def Exit():
     print("\033[0;35m ")
-    print(pyfiglet.figlet_format("Thank you!", font="isometric3", width=150))
+    print(pyfiglet.figlet_format("Thank you!", font="isometric3", width=150, justify = "center"))
