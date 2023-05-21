@@ -10,6 +10,7 @@ def Header():
     title_line = title_text.center(150, "*")
     print(title_line)
     print("")
+
 # Loading animation
 def Loading():
     import time
@@ -21,4 +22,8 @@ def Loading():
         print("\r", end="")
     print("\033[0;32m DONE!\N{grinning face}")
     print("")
+
 # Thank you prompt
+def Exit():
+    print("\033[0;35m ")
+    print(pyfiglet.figlet_format("Thank you!", font="isometric3", width=150))
