@@ -9,5 +9,7 @@ class Operations:
         if input_operation == "Addition":
             return first_number + second_number
     # if subtraction
+        if input_operation == "Subtraction":
+            return first_number - second_number
     # if multi
     # if divi

@@ -12,7 +12,7 @@ class Calculator:
     # method for inputting values and calculation
     def calculation(self):
         # Ask user to choose and input math operation
-        input_operation = "Addition"
+        input_operation = "Subtraction"
         # Ask user to input two numbers
         first_number = 2
         second_number = 4
