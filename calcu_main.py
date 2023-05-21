@@ -19,6 +19,7 @@ class Calculator:
     def calculation(self):
         try:
             # Ask user to choose and input math operation
+            print("")
             input_operation = input("\033[0;36m Choose one math operation (Addition, Subtraction, Multiplication, Division): ")
             # Ask user to input two numbers
             first_number = float(input("\033[0;35m Enter your first number: "))
@@ -39,7 +40,8 @@ class Calculator:
             if retry_input == "Yes":
                 Calculator.calculation(self)
             else:
-                print("Thank you for using this calculator!")
+                calcu_ui.Exit()
+                print("\033[0;33m Thank you for using this calculator!")
 
         # catch exceptions
         except ValueError as e:

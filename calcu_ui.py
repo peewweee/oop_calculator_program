@@ -9,10 +9,10 @@ def Header():
     title_text = " Welcome to Phoebe's Calculator! "
     title_line = title_text.center(150, "*")
     print(title_line)
-    print("")
 
 # Loading animation
 def Loading():
+    print("")
     import time
     for i in range(3):
         print("\033[0;34m Calculating ", end="\N{slightly smiling face}")
