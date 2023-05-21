@@ -37,6 +37,8 @@ class Calculator:
         # catch exceptions
         except ValueError as e:
             print(f"Error: {e}")
+        except ZeroDivisionError:
+            print("Error: Cannot divide by zero.")
 
 # call calculation method
 calculator = Calculator()
