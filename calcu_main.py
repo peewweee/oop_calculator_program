@@ -20,6 +20,15 @@ class Calculator:
         result_number = self.operations.CalcOperation(first_number, second_number, input_operation)
         # display result
         print("Answer:", result_number)
+
+        # ask user if they want to try again or not
+        retry_input = input("Do you want to try again? (Yes/No): ")
+        # if yes repeat
+        if retry_input == "Yes":
+            Calculator.calculation(self)
+        else:
+            print("Thank you for using this calculator!")
+
 # call calculation method
 calculator = Calculator()
 calculator.calculation()
