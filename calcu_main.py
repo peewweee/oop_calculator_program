@@ -22,7 +22,7 @@ class Calculator:
             first_number = float(input("\033[0;35m Enter your first number: "))
             second_number = float(input(" Enter your second number: "))
             # perform calculation using operations
-            result_number = phoebe.CalcOperation(first_number, second_number, input_operation)
+            result_number = phoebe.Power(first_number, second_number, input_operation)
 
             if input_operation not in ['Addition', 'Subtraction', 'Multiplication', 'Division', 'Exponents']:
                 raise ValueError("\033[0;31m Invalid math operation")
