@@ -4,6 +4,10 @@
 import calcu_ui
 calcu_ui.Header()
 
+# importing CalculatorPhoebe
+from calcu_phoebe import CalculatorPhoebe
+phoebe = CalculatorPhoebe
+
 # Pseudocode (main program)
 # import operations file
 import calcu_operations
@@ -13,7 +17,7 @@ class Calculator:
 
     # method for instance of operation class
     def __init__(self):
-        self.operations = calcu_operations.Operations()
+        self.operations = phoebe.Operations()
 
     # method for inputting values and calculation
     def calculation(self):
