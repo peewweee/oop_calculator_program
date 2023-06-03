@@ -24,7 +24,7 @@ class Calculator:
             # perform calculation using operations
             result_number = phoebe.Power(first_number, second_number, input_operation)
 
-            if input_operation not in ['Addition', 'Subtraction', 'Multiplication', 'Division', 'Exponents']:
+            if input_operation not in ['Addition', 'Subtraction', 'Multiplication', 'Division', 'Exponents', 'Combination']:
                 raise ValueError("\033[0;31m Invalid math operation")
 
             # display result

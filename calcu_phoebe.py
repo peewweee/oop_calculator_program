@@ -8,5 +8,7 @@ class CalculatorPhoebe(Operations):
     def Power(self,  first_number, second_number, input_operation):
         if input_operation == "Exponents":
             return first_number ** second_number
+        elif input_operation == "Combination":
+            return str(first_number) + str(second_number)
         else:
             return Operations.CalcOperation(self, first_number, second_number, input_operation)
