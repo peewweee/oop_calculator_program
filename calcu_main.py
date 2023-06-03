@@ -5,8 +5,7 @@ import calcu_ui
 calcu_ui.Header()
 
 # importing CalculatorPhoebe
-from calcu_phoebe import CalculatorPhoebe
-phoebe = CalculatorPhoebe
+import calcu_phoebe
 
 # Pseudocode (main program)
 # import operations file
@@ -17,7 +16,7 @@ class Calculator:
 
     # method for instance of operation class
     def __init__(self):
-        self.operations = phoebe.Operations()
+        self.operations = calcu_phoebe.CalculatorPhoebe()
 
     # method for inputting values and calculation
     def calculation(self):
@@ -31,7 +30,7 @@ class Calculator:
             # perform calculation using operations
             result_number = self.operations.CalcOperation(first_number, second_number, input_operation)
 
-            if input_operation not in ['Addition', 'Subtraction', 'Multiplication', 'Division']:
+            if input_operation not in ['Addition', 'Subtraction', 'Multiplication', 'Division', 'Exponents']:
                 raise ValueError("\033[0;31m Invalid math operation")
 
             # display result
